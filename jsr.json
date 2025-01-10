@@ -1,7 +1,7 @@
 {
-  "name": "@cloydlau/json-editor-vue",
+  "name": "@cloydlau/json-editor-vue-v2",
   "version": "0.17.3",
-  "exports": "./dist/json-editor-vue.mjs",
+  "exports": "./dist/json-editor-vue-v2.mjs",
   "publish": {
     "include": [
       "dist",

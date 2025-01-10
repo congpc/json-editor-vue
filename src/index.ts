@@ -1,8 +1,8 @@
-import type { JSONContent, JSONEditorPropsOptional, TextContent } from 'vanilla-jsoneditor'
+import type { JSONContent, JSONEditorPropsOptional, TextContent } from 'vanilla-jsoneditor-v2'
 import type { App, Plugin, PropType } from 'vue-demi'
 import { destr, safeDestr } from 'destr'
 import { debounce } from 'lodash-es'
-import { createJSONEditor, Mode } from 'vanilla-jsoneditor'
+import { createJSONEditor, Mode } from 'vanilla-jsoneditor-v2'
 import { computed, defineComponent, getCurrentInstance, h, isVue3, onMounted, onUnmounted, ref, unref, watch, watchEffect } from 'vue-demi'
 import { conclude, resolveConfig } from 'vue-global-config'
 import { PascalCasedName as name } from '../package.json'
@@ -169,6 +169,7 @@ const JsonEditorVue = defineComponent({
               onChange,
               onChangeMode,
               mode: modeComputed.value,
+              localeLanguage: 'zh',
               // Can not just pass one of parse and stringify
               parser: {
                 // SafeDestr is used by default so that it will not affect the result of jsonEditor.value.validate()
