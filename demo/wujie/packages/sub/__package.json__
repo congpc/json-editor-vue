@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "json-editor-vue": "latest",
-    "vanilla-jsoneditor": "latest",
+    "vanilla-jsoneditor-v2": "latest",
     "vue": "latest"
   },
   "devDependencies": {

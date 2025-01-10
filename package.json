@@ -1,8 +1,8 @@
 {
-  "name": "json-editor-vue",
+  "name": "json-editor-vue-v2",
   "PascalCasedName": "JsonEditorVue",
   "type": "commonjs",
-  "version": "0.17.3",
+  "version": "0.17.4",
   "private": false,
   "description": "Vue and Nuxt 2/3 isomorphic JSON editor, viewer, formatter and validator.",
   "author": {
@@ -39,21 +39,21 @@
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/json-editor-vue.d.mts",
-        "default": "./dist/json-editor-vue.mjs"
+        "types": "./dist/json-editor-vue-v2.d.mts",
+        "default": "./dist/json-editor-vue-v2.mjs"
       },
       "require": {
-        "types": "./dist/json-editor-vue.d.ts",
-        "default": "./dist/json-editor-vue.umd.js"
+        "types": "./dist/json-editor-vue-v2.d.ts",
+        "default": "./dist/json-editor-vue-v2.umd.js"
       }
     },
     "./*": "./*"
   },
-  "main": "./dist/json-editor-vue.umd.js",
-  "module": "./dist/json-editor-vue.mjs",
-  "unpkg": "./dist/json-editor-vue.umd.js",
-  "jsdelivr": "./dist/json-editor-vue.umd.js",
-  "types": "./dist/json-editor-vue.d.ts",
+  "main": "./dist/json-editor-vue-v2.umd.js",
+  "module": "./dist/json-editor-vue-v2.mjs",
+  "unpkg": "./dist/json-editor-vue-v2.umd.js",
+  "jsdelivr": "./dist/json-editor-vue-v2.umd.js",
+  "types": "./dist/json-editor-vue-v2.d.ts",
   "files": [
     "dist",
     "docs",
@@ -66,10 +66,10 @@
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
     "doc": "vitepress dev --open /README",
-    "typegen": "npx tsup --entry.json-editor-vue src/index.ts --format esm,cjs --cjsInterop --clean --dts-only",
+    "typegen": "npx tsup --entry.json-editor-vue-v2 src/index.ts --format esm,cjs --cjsInterop --clean --dts-only",
     "build": "vite build && pnpm typegen",
     "release": "esno ./scripts/release.mts",
-    "sync-to-cnpm": "npx cnpm sync && curl -L https://npmmirror.com/sync/json-editor-vue",
+    "sync-to-cnpm": "npx cnpm sync && curl -L https://npmmirror.com/sync/json-editor-vue-v2",
     "license-scan": "license-checker --summary --out ./dependency-licenses.txt",
     "lint": "eslint \"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,json,md,html,css,scss,sass}\" --ignore-pattern stats.html",
     "lint:fix": "eslint \"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,json,md,html,css,scss,sass}\" --ignore-pattern stats.html --fix",
@@ -86,7 +86,7 @@
     }
   },
   "dependencies": {
-    "vanilla-jsoneditor": "^2.0.0",
+    "vanilla-jsoneditor-v2": "2.3.4",
     "vue-demi": "^0.14.10"
   },
   "devDependencies": {

@@ -115,18 +115,18 @@ npm rm json-editor-vue && npm i json-editor-vue
 {
   // npm/cnpm/bun
   "overrides": {
-    "vanilla-jsoneditor": "***",
+    "vanilla-jsoneditor-v2": "***",
     "vue-demi": "***"
   },
   // yarn/bun
   "resolutions": {
-    "vanilla-jsoneditor": "***",
+    "vanilla-jsoneditor-v2": "***",
     "vue-demi": "***"
   },
   // pnpm
   "pnpm": {
     "overrides": {
-      "vanilla-jsoneditor": "***",
+      "vanilla-jsoneditor-v2": "***",
       "vue-demi": "***"
     }
   }
@@ -141,7 +141,7 @@ With Scope:
   // npm/cnpm/bun
   "overrides": {
     "json-editor-vue": {
-      "vanilla-jsoneditor": "***",
+      "vanilla-jsoneditor-v2": "***",
       "vue-demi": "***"
     }
   },
@@ -217,8 +217,8 @@ createApp()
         "imports": {
           "vue": "https://cdn.jsdelivr.net/npm/vue/dist/vue.esm-browser.prod.js",
           "vue-demi": "https://cdn.jsdelivr.net/npm/vue-demi/lib/v3/index.mjs",
-          "vanilla-jsoneditor": "https://cdn.jsdelivr.net/npm/vanilla-jsoneditor",
-          "json-editor-vue": "https://cdn.jsdelivr.net/npm/json-editor-vue@0.17/dist/json-editor-vue.mjs"
+          "vanilla-jsoneditor-v2": "https://cdn.jsdelivr.net/npm/vanilla-jsoneditor-v2",
+          "json-editor-vue-v2": "https://cdn.jsdelivr.net/npm/json-editor-vue@0.17/dist/json-editor-vue-v2.mjs"
         }
       }
     </script>
@@ -333,8 +333,8 @@ Vue.use(JsonEditorVue, {
         "imports": {
           "vue": "https://cdn.jsdelivr.net/npm/vue@2/dist/vue.esm.browser.min.js",
           "vue-demi": "https://cdn.jsdelivr.net/npm/vue-demi/lib/v2.7/index.mjs",
-          "vanilla-jsoneditor": "https://cdn.jsdelivr.net/npm/vanilla-jsoneditor",
-          "json-editor-vue": "https://cdn.jsdelivr.net/npm/json-editor-vue@0.17/dist/json-editor-vue.mjs"
+          "vanilla-jsoneditor-v2": "https://cdn.jsdelivr.net/npm/vanilla-jsoneditor-v2",
+          "json-editor-vue-v2": "https://cdn.jsdelivr.net/npm/json-editor-vue@0.17/dist/json-editor-vue-v2.mjs"
         }
       }
     </script>
@@ -467,8 +467,8 @@ Vue.use(JsonEditorVue, {
           "@vue/composition-api": "https://cdn.jsdelivr.net/npm/@vue/composition-api/dist/vue-composition-api.mjs",
           "@vue/composition-api/dist/vue-composition-api.mjs": "https://cdn.jsdelivr.net/npm/@vue/composition-api/dist/vue-composition-api.mjs",
           "vue-demi": "https://cdn.jsdelivr.net/npm/vue-demi/lib/v2/index.mjs",
-          "vanilla-jsoneditor": "https://cdn.jsdelivr.net/npm/vanilla-jsoneditor",
-          "json-editor-vue": "https://cdn.jsdelivr.net/npm/json-editor-vue@0.17/dist/json-editor-vue.mjs"
+          "vanilla-jsoneditor-v2": "https://cdn.jsdelivr.net/npm/vanilla-jsoneditor-v2",
+          "json-editor-vue-v2": "https://cdn.jsdelivr.net/npm/json-editor-vue@0.17/dist/json-editor-vue-v2.mjs"
         }
       }
     </script>
