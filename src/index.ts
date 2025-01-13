@@ -32,6 +32,9 @@ const props = {
   mode: {
     type: String as PropType<Mode>,
   },
+  localeLanguage: {
+    type: String as PropType<string>,
+  },
   debounce: {
     type: Number as PropType<number>,
   },
@@ -52,6 +55,7 @@ const props = {
   [key in ModelValueProp]: object
 } & {
   mode: { type: PropType<Mode> }
+  localeLanguage: { type: PropType<string> }
   debounce: { type: PropType<number> }
   stringified: { type: PropType<boolean>, default: undefined }
 } & {
@@ -90,6 +94,15 @@ const JsonEditorVue = defineComponent({
       })
       jsonEditor.value?.updateProps({
         mode: modeComputed.value || Mode.tree,
+      })
+    })
+    const localeLanguageComputed = ref()
+    watchEffect(() => {
+      localeLanguageComputed.value = conclude([props.localeLanguage, propsGlobal.localeLanguage], {
+        type: String,
+      })
+      jsonEditor.value?.updateProps({
+        localeLanguage: localeLanguageComputed.value ?? 'zh',
       })
     })
     const onChangeMode = (mode: Mode) => {
@@ -169,7 +182,7 @@ const JsonEditorVue = defineComponent({
               onChange,
               onChangeMode,
               mode: modeComputed.value,
-              localeLanguage: 'zh',
+              localeLanguage: localeLanguageComputed.value,
               // Can not just pass one of parse and stringify
               parser: {
                 // SafeDestr is used by default so that it will not affect the result of jsonEditor.value.validate()

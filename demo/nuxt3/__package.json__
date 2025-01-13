@@ -8,7 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "json-editor-vue": "latest"
+    "json-editor-vue-v2": "latest"
   },
   "devDependencies": {
     "@vue/runtime-core": "latest",

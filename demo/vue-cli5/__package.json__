@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "core-js": "latest",
-    "json-editor-vue": "latest",
+    "json-editor-vue-v2": "latest",
     "vue": "latest"
   },
   "devDependencies": {

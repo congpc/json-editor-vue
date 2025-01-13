@@ -140,7 +140,7 @@ npm rm json-editor-vue && npm i json-editor-vue
 {
   // npm/cnpm/bun
   "overrides": {
-    "json-editor-vue": {
+    "json-editor-vue-v2": {
       "vanilla-jsoneditor-v2": "***",
       "vue-demi": "***"
     }

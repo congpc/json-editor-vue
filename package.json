@@ -2,7 +2,7 @@
   "name": "json-editor-vue-v2",
   "PascalCasedName": "JsonEditorVue",
   "type": "commonjs",
-  "version": "0.17.4",
+  "version": "0.17.5",
   "private": false,
   "description": "Vue and Nuxt 2/3 isomorphic JSON editor, viewer, formatter and validator.",
   "author": {
@@ -70,6 +70,7 @@
     "build": "vite build && pnpm typegen",
     "release": "esno ./scripts/release.mts",
     "sync-to-cnpm": "npx cnpm sync && curl -L https://npmmirror.com/sync/json-editor-vue-v2",
+    "release:publish": "npm publish package/",
     "license-scan": "license-checker --summary --out ./dependency-licenses.txt",
     "lint": "eslint \"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,json,md,html,css,scss,sass}\" --ignore-pattern stats.html",
     "lint:fix": "eslint \"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,json,md,html,css,scss,sass}\" --ignore-pattern stats.html --fix",
@@ -86,7 +87,7 @@
     }
   },
   "dependencies": {
-    "vanilla-jsoneditor-v2": "2.3.4",
+    "vanilla-jsoneditor-v2": "^2.3.5",
     "vue-demi": "^0.14.10"
   },
   "devDependencies": {
@@ -112,7 +113,7 @@
     "eslint-plugin-format": "^0.1.2",
     "esno": "^4.8.0",
     "happy-dom": "^15.7.4",
-    "json-editor-vue": "workspace:*",
+    "json-editor-vue-v2": "workspace:*",
     "kolorist": "^1.8.0",
     "license-checker": "^25.0.1",
     "lint-staged": "^15.2.10",

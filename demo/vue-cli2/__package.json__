@@ -10,7 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "json-editor-vue": "latest",
+    "json-editor-vue-v2": "latest",
     "vue": "^2.7.16"
   },
   "devDependencies": {

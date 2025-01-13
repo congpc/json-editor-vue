@@ -140,7 +140,7 @@ With Scope:
 {
   // npm/cnpm/bun
   "overrides": {
-    "json-editor-vue": {
+    "json-editor-vue-v2": {
       "vanilla-jsoneditor-v2": "***",
       "vue-demi": "***"
     }

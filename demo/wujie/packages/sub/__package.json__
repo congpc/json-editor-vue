@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "json-editor-vue": "latest",
+    "json-editor-vue-v2": "latest",
     "vanilla-jsoneditor-v2": "latest",
     "vue": "latest"
   },

@@ -18,6 +18,7 @@ const data = reactive({
     },
   },
   mode: undefined,
+  localeLanguage: 'zh',
   readOnly: false,
 })
 
@@ -57,6 +58,11 @@ const stringified = ref(true)
         type="checkbox"
       >
       <label for="enable-stringified">enable stringified</label>
+      <select v-model="data.localeLanguage">
+        <option value="en">English</option>
+        <option value="ja">日本語</option>
+        <option value="zh">中國人</option>
+      </select>
     </p>
 
     <br>
@@ -64,6 +70,7 @@ const stringified = ref(true)
       ref="jsonEditorVueRef"
       v-model="data.value"
       :mode.sync="data.mode"
+      :locale-language.sync="data.localeLanguage"
       :read-only="data.readOnly"
       :stringified="stringified"
     />

@@ -27,6 +27,7 @@ export default {
         },
       },
       mode: undefined,
+      localeLanguage: 'zh',
       readOnly: false,
       stringified: true,
     }
@@ -65,6 +66,11 @@ export default {
         type="checkbox"
       >
       <label for="enable-stringified">enable stringified</label>
+      <select v-model="localeLanguage">
+        <option value="en">English</option>
+        <option value="ja">日本語</option>
+        <option value="zh">中國人</option>
+      </select>
     </p>
 
     <br>
@@ -72,6 +78,7 @@ export default {
       ref="jsonEditorVueRef"
       v-model="data.value"
       :mode.sync="mode"
+      :locale-language.sync="localeLanguage"
       :read-only="readOnly"
       :stringified="stringified"
     />
