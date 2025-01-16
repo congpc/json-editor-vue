@@ -2,7 +2,7 @@
   "name": "json-editor-vue-v2",
   "PascalCasedName": "JsonEditorVue",
   "type": "commonjs",
-  "version": "0.17.6",
+  "version": "0.17.7",
   "private": false,
   "description": "Vue and Nuxt 2/3 isomorphic JSON editor, viewer, formatter and validator.",
   "author": {
@@ -87,7 +87,7 @@
     }
   },
   "dependencies": {
-    "vanilla-jsoneditor-v2": "^2.3.5",
+    "vanilla-jsoneditor-v2": "^2.3.6",
     "vue-demi": "^0.14.10"
   },
   "devDependencies": {

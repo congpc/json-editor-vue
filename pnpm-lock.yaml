@@ -12,8 +12,8 @@ importers:
         specifier: '>=1'
         version: 1.7.2(vue@3.5.13(typescript@5.6.3))
       vanilla-jsoneditor-v2:
-        specifier: ^2.3.5
-        version: 2.3.5(@lezer/common@1.2.3)
+        specifier: ^2.3.6
+        version: 2.3.6(@lezer/common@1.2.3)
       vue-demi:
         specifier: ^0.14.10
         version: 0.14.10(@vue/composition-api@1.7.2(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
@@ -4615,6 +4615,9 @@ packages:
 
   vanilla-jsoneditor-v2@2.3.5:
     resolution: {integrity: sha512-ceOXTf1Of9EtZVKw4GY8Kr+K2LsHifbvquNw4brl+vrzQrfgTPjMT1X4G2noi6NGhz9TQShQIKcptwxn0tMUlg==}
+
+  vanilla-jsoneditor-v2@2.3.6:
+    resolution: {integrity: sha512-hTRv5u0nSfRaPxgxze35lnlNgic/BMBwaMxq1YWfWXBv8sarZWdEkT1FYp8jRaChEdOcl3pXTVPylJZ1QdbXLQ==}
 
   vanilla-picker@2.12.3:
     resolution: {integrity: sha512-qVkT1E7yMbUsB2mmJNFmaXMWE2hF8ffqzMMwe9zdAikd8u2VfnsVY2HQcOUi2F38bgbxzlJBEdS1UUhOXdF9GQ==}
@@ -9682,6 +9685,37 @@ snapshots:
   validate-npm-package-name@5.0.1: {}
 
   vanilla-jsoneditor-v2@2.3.5(@lezer/common@1.2.3):
+    dependencies:
+      '@codemirror/autocomplete': 6.18.1(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.1)(@lezer/common@1.2.3)
+      '@codemirror/commands': 6.7.1
+      '@codemirror/lang-json': 6.0.1
+      '@codemirror/language': 6.10.3
+      '@codemirror/lint': 6.8.2
+      '@codemirror/search': 6.5.6
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.34.1
+      '@fortawesome/free-regular-svg-icons': 6.6.0
+      '@fortawesome/free-solid-svg-icons': 6.6.0
+      '@jsonquerylang/jsonquery': 3.1.1
+      '@lezer/highlight': 1.2.1
+      '@replit/codemirror-indentation-markers': 6.5.3(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.1)
+      ajv: 8.17.1
+      codemirror-wrapped-line-indent: 1.0.8(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.1)
+      diff-sequences: 29.6.3
+      immutable-json-patch: 6.0.1
+      jmespath: 0.16.0
+      json-source-map: 0.6.1
+      jsonpath-plus: 10.2.0
+      jsonrepair: 3.9.0
+      lodash-es: 4.17.21
+      memoize-one: 6.0.0
+      natural-compare-lite: 1.4.0
+      svelte: 5.1.4
+      vanilla-picker: 2.12.3
+    transitivePeerDependencies:
+      - '@lezer/common'
+
+  vanilla-jsoneditor-v2@2.3.6(@lezer/common@1.2.3):
     dependencies:
       '@codemirror/autocomplete': 6.18.1(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.1)(@lezer/common@1.2.3)
       '@codemirror/commands': 6.7.1
